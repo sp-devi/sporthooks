@@ -1,6 +1,7 @@
 const axios = require('axios');
 
-axios.get('https://api.meetup.com/find/groups?zip=10021')
+// Requires OAuth access key
+axios.get('https://api.meetup.com/find/upcoming_events')
     .then(res => {
         console.log(res.data);
     })
